@@ -80,3 +80,32 @@ h1{
 .nav a:hover{
   color:var(--text);
 }
+
+.lang-switch{
+  display:inline-flex;
+  gap:8px;
+  align-items:center;
+  margin-left: 14px;
+}
+
+.lang-btn{
+  appearance:none;
+  border:1px solid var(--line);
+  background: rgba(255,255,255,0.03);
+  color: var(--muted);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  cursor:pointer;
+}
+
+.lang-btn:hover{
+  color: var(--text);
+  border-color: rgba(255,255,255,0.25);
+}
+
+.lang-btn.is-active{
+  color: var(--text);
+  border-color: rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.08);
+}
